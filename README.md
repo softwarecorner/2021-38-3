@@ -12,7 +12,7 @@ Have you ever presented null results to disappointed researchers, and then been 
 
 ## Useful package #1: ranked sparsity methods via **sparseR**
 
-While currently in a beta-phase, the **sparseR** package has been designed to make dealing with interactions and polynomials much more analyst-friendly. Building on the recipes package, **sparseR** has many built-in tools to facilitate the prepping of a model matrix with interactions and polynomials; these features are presented in the package website located at https://petersonr.github.io/sparseR/. The simplest way to implement the SRL in **sparseR** is via a single call to the `sparseR()` function, here demonstrated with Fisher’s `iris` data set: 
+While currently in a beta-phase, the **sparseR** package has been designed to make dealing with interactions and polynomials much more analyst-friendly. Building on the **recipes** package, **sparseR** has many built-in tools to facilitate the prepping of a model matrix with interactions and polynomials; these features are presented in the package website located at https://petersonr.github.io/sparseR/. The simplest way to implement the SRL in **sparseR** is via a single call to the `sparseR()` function, here demonstrated with Fisher’s `iris` data set: 
 
 ```r
 (srl <- sparseR(Sepal.Width ~ ., data = iris, k = 1, seed = 1))
