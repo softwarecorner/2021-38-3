@@ -1,6 +1,6 @@
 # R packages for selecting important interactions via regularization
 
-Ryan Peterson
+[Ryan Peterson](https://github.com/petersonR)
 
 Department of Biostatistics and Informatics, 
 Colorado School of Public Health, 
