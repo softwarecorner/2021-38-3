@@ -6,6 +6,8 @@ Department of Biostatistics and Informatics,
 Colorado School of Public Health, 
 University of Colorado Anschutz Medical Campus
 
+_Editor note: This article was originally published in the [Biometric Bulletin (2021) Volume 38 Issue 3](https://www.biometricsociety.org/publications/biometric-bulletin). The example code is included as `examples.R` file._
+
 Have you ever presented null results to disappointed researchers, and then been asked the question “but what about interactions; are any of those significant?” I have heard this question from clinicians and researchers from many fields of science. While usually asked in earnest, **this question is a dangerous one**; the sheer number of interactions can greatly inflate the number of false discoveries in the interactions, resulting in difficult-to-interpret models with many unnecessary interactions. Still, there are times when these expeditions are necessary and fruitful. Thankfully, useful tools are now available to help with the process. This article discusses two regularization-based approaches: Group-Lasso INTERaction-NET (glinternet) and the Sparsity-Ranked Lasso (SRL). The glinternet method implements a hierarchy-preserving selection and estimation procedure, while the SRL is a hierarchy-preferring regularization method which operates under ranked sparsity principles (in short, ranked sparsity methods ensure interactions are treated more skeptically than main effects *a priori*).
 
 ## Useful package #1: ranked sparsity methods via **sparseR**
@@ -128,4 +130,3 @@ The SRL and other sparsity-ranked regularization methods implemented in **sparse
 - Peterson R (2021). sparseR: Variable selection under ranked sparsity principles for interactions and polynomials. https://github.com/petersonR/sparseR/. 
 - Peterson R and Cavanaugh J (2021+). Ranked Sparsity: A Cogent Regularization Framework for Selecting and Estimating Feature Interactions and Polynomials. [arXiv:2107.07594](https://arxiv.org/abs/2107.07594) 
 
-_Editor note: This article was originally published in the [Biometric Bulletin (2021) Volume 38 Issue 3](https://www.biometricsociety.org/publications/biometric-bulletin). The example code is included as `examples.R` file._
