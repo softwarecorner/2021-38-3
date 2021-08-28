@@ -6,7 +6,7 @@ Department of Biostatistics and Informatics,
 Colorado School of Public Health, 
 University of Colorado Anschutz Medical Campus
 
-_Editor note: This article was originally published in the [Biometric Bulletin (2021) Volume 38 Issue 3](https://www.biometricsociety.org/publications/biometric-bulletin). The example code is included as `examples.R` file._
+_Editor note: This article was originally published in the [Biometric Bulletin (2021) Volume 38 Issue 3](https://www.biometricsociety.org/publications/biometric-bulletin). The example code is included in `examples.R`._
 
 Have you ever presented null results to disappointed researchers, and then been asked the question “but what about interactions; are any of those significant?” I have heard this question from clinicians and researchers from many fields of science. While usually asked in earnest, **this question is a dangerous one**; the sheer number of interactions can greatly inflate the number of false discoveries in the interactions, resulting in difficult-to-interpret models with many unnecessary interactions. Still, there are times when these expeditions are necessary and fruitful. Thankfully, useful tools are now available to help with the process. This article discusses two regularization-based approaches: Group-Lasso INTERaction-NET (glinternet) and the Sparsity-Ranked Lasso (SRL). The glinternet method implements a hierarchy-preserving selection and estimation procedure, while the SRL is a hierarchy-preferring regularization method which operates under ranked sparsity principles (in short, ranked sparsity methods ensure interactions are treated more skeptically than main effects *a priori*).
 
